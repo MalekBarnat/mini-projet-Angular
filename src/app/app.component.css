@@ -1,8 +1,31 @@
-.tab-list{color:white;
+:host{
+    height: 100 vh;
+}
+.container1{
+    float: left;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    width: 20%;
+    color: white;
+}
+.container2{
+    float:right;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    width: 80%; 
+    height: 80vh;
+    color:white;  
+}
+.header{
+    display: block; 
+    text-align: right;    
+}
+.pageloaded{
+    display: block; 
+}
+.tablist{color:white;
     font-size: 1.5rem;
-    width: 100%;
-    position: relative;
-    top: 40px;}
+}
 img {
         border-radius: 500%;
         width:50px;
@@ -13,29 +36,24 @@ img {
         left: 10px;
       }
 ul {
+        padding: 0;
         list-style-type: none;
         }
-input{
-    height: 25px;
-    position: relative;
-        bottom: 17px;
-        left: 10px;
-}
+a {      color: white;
+        text-decoration: none; }
 .webinar{
-    border-radius: 1%;
-        width:100px;
-}
+            border-radius: 1%;
+                width:100px;
+        }
 label{color:white;
-    font-size: 3rem;
-    width: 100%;
-    position: relative;
-    bottom: 30px;
-    left: 10px;}
-#container1{
-    position:absolute;
-    top:4%;
-    right: 25px;
-}
-#date{
-    bottom: 10px;
-}
+            font-size: 1.5rem;
+            width: 100%;
+            position: relative;
+            bottom: 30px;
+            left: 10px;}
+input{
+                height: 25px;
+                position: relative;
+                    bottom: 17px;
+                    left: 10px;
+        }

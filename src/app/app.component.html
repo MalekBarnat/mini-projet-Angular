@@ -1,48 +1,59 @@
-<router-outlet>
-    <div>
-        <div >
+   <div class="container1">
+        <div class="title">
             <img class="webinar" src="../assets/icons/webinar.png">
             <label for="Espace Admin">Espace Admin</label>
         </div>
         <br><br>
-
-    <div id="container1">
-        <label id="date" for="date&adresse">Date & Adresse &nbsp; &nbsp; </label>
-        <img src="../assets/icons/onoff.png">
-    </div>
-    <div>
-        <span>
-            <img class="thumbnail" src="../assets/icons/search.png">
-        </span>
-        <span>
-            <input type="text" id="session-name" name="session-name" size="20px" placeholder="Chercher Session">
-        </span>
+        <div class="recherche">
+            <span>
+                <img class="thumbnail" src="../assets/icons/search.png">
+            </span>
+            <span>
+                <input type="text" id="session-name" name="session-name" size="20px" placeholder="Chercher Session">
+            </span>
         </div>
-    <div class="tab-list"><ul>
-
-        <li>
-            <span>
-                <img class="thumbnail" src="../assets/icons/dashboard.png">
-            </span>
-            <span class="text">Dashboard</span>
-        </li>
-        <li>
-            <span>
-                <img class="thumbnail" src="../assets/icons/sessions.png">
-            </span>
-            <span class="text">Sessions</span>
-        </li>
-        <li>
-            <span>
-                <img class="thumbnail" src="../assets/icons/formateurs.png">
-            </span>
-            <span class="text">Formateurs</span>
-        </li>
-        <li>
-            <span>
-                <img class="thumbnail" src="../assets/icons/participants.png">
-            </span>
-            <span class="text">Participants</span>
-        </li>
-    </ul></div></div>
-</router-outlet>
+        
+        <div class="tablist">
+            <ul>
+                <li>
+                    <span>
+                        <img class="thumbnail" src="../assets/icons/dashboard.png">
+                    </span>
+                    <span><a class="text" [routerLink]="['/dashboard']">Dashboard</a></span>
+                </li>
+                <hr>
+                <li>
+                    <span>
+                        <img class="thumbnail" src="../assets/icons/sessions.png">
+                    </span>
+                    <span><a class="text" [routerLink]="['/sessions']">Sessions</a></span>
+                </li>
+                <hr>
+                <li>
+                    <span>
+                        <img class="thumbnail" src="../assets/icons/formateurs.png">
+                    </span>
+                    <span><a class="text" [routerLink]="['/formateurs']">Formateurs</a></span>
+                </li>
+                <hr>
+                <li>
+                    <span>
+                        <img class="thumbnail" src="../assets/icons/participants.png">
+                    </span>
+                    <span><a class="text" [routerLink]="['/participants']">Participants</a></span>
+                </li>
+                <hr>
+            </ul>
+        </div>
+    </div>
+    <div class="container2" >
+        <div class="header">
+            
+            <label id="date" for="date&adresse">Date & Adresse &nbsp; &nbsp; </label>
+            <img src="../assets/icons/onoff.png">
+        </div>
+        <br>
+        <div class="pageloaded">
+            <router-outlet></router-outlet>         
+        </div>
+    </div>
