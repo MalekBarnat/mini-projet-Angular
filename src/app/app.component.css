@@ -1,0 +1,41 @@
+.tab-list{color:white;
+    font-size: 1.5rem;
+    width: 100%;
+    position: relative;
+    top: 40px;}
+img {
+        border-radius: 500%;
+        width:50px;
+      }
+.text{
+        position: relative;
+        bottom: 17px;
+        left: 10px;
+      }
+ul {
+        list-style-type: none;
+        }
+input{
+    height: 25px;
+    position: relative;
+        bottom: 17px;
+        left: 10px;
+}
+.webinar{
+    border-radius: 1%;
+        width:100px;
+}
+label{color:white;
+    font-size: 3rem;
+    width: 100%;
+    position: relative;
+    bottom: 30px;
+    left: 10px;}
+#container1{
+    position:absolute;
+    top:4%;
+    right: 25px;
+}
+#date{
+    bottom: 10px;
+}
